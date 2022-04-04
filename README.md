@@ -1,0 +1,2 @@
+# youtube-vanced-apkmirror-scraper
+A script that I wrote to scrape all Youtube Vanced apks from APKMirror using Selenium, as Cloudflare prevented me from using the requests library. The code is pretty messy as I had never used Selenium before, so I was learning on the go. Cloudflare will begin blocking download requests around 50 requests so I suggest switching to a different network and rerunning the script when downloads begin failing.
