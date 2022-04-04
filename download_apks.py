@@ -32,8 +32,8 @@ RATE_LIMIT_PAUSE = .5
 def main(url):
     # Setting up the webdriver
     options = webdriver.ChromeOptions()
-    options.add_experimental_option("prefs", {"download.default_directory": "C:\\Users\\Seb C\\Documents\\General Purpose Backups\\Youtube Vanced\\apkmirror.com apks\\apks", "download_restrictions": 3})
-    options.add_extension("C:\\Users\\Seb C\\Documents\\General Purpose Backups\\Youtube Vanced\\apkmirror.com apks\\ublock-origin.crx")
+    options.add_experimental_option("prefs", {"download.default_directory": "apks", "download_restrictions": 3})
+    options.add_extension("ublock-origin.crx")
     driver = webdriver.Chrome(options=options)
     apks_list_final = []
     dl_urls_list = []
@@ -143,7 +143,7 @@ def main(url):
     ''' Downloading all the apks '''
     # Setting up the webdriver
     download_options = webdriver.ChromeOptions()
-    download_options.add_experimental_option("prefs", {"download.default_directory": "C:\\Users\\Seb C\\Documents\\General Purpose Backups\\Youtube Vanced\\apkmirror.com apks\\apks"})
+    download_options.add_experimental_option("prefs", {"download.default_directory": "apks"})
     download_driver = webdriver.Chrome(options=download_options)
     # Dictionary containing the download status of each download 
     download_statuses = {}
